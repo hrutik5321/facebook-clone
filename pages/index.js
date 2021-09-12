@@ -1,3 +1,4 @@
+// @ts-ignore
 import classes from "../styles/HomeLeftSlide.module.css";
 import HomeLeftSide from "../components/HomeLeftSlide/HomeLeftSide";
 import Posts from "../components/Posts";

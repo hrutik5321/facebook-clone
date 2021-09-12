@@ -8,12 +8,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function Posts({ post }) {
+function Posts({ post, cont }) {
   const [showComment, setShowComment] = useState(false);
 
   const showCommentHandler = () => {
     setShowComment(!showComment);
   };
+
+  console.log(cont);
 
   return (
     <>
@@ -84,3 +86,12 @@ function Posts({ post }) {
 }
 
 export default Posts;
+
+export const getServerSideProps = (ctx) => {
+  const cont = ctx.post;
+  return {
+    props: {
+      cont,
+    },
+  };
+};
