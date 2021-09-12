@@ -17,7 +17,8 @@ function LoginForm() {
         return "";
       } else {
         authenticate(data, () => {
-          router.push("/");
+          const userId = data.user._id;
+          router.push(`/timeline/${userId}`);
         });
       }
     });
