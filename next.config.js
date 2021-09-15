@@ -5,6 +5,7 @@ module.exports = {
       "e7.pngegg.com",
       "lh3.googleusercontent.com",
       "images.unsplash.com",
+      "images-eu.ssl-images-amazon.com",
     ],
   },
 };

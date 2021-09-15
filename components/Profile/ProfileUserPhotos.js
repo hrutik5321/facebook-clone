@@ -10,7 +10,7 @@ function ProfileUserPhotos() {
         {posts.map((photo, i) => {
           return (
             <div className="relative h-28 w-28 m-1" key={i}>
-              <Image layout="fill" src={photo.img} />
+              <Image layout="fill" src={photo.img} alt="User Image" />
             </div>
           );
         })}

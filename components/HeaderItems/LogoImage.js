@@ -7,6 +7,7 @@ function LogoImage() {
       width={56}
       height={56}
       className="rounded-full pr-5"
+      alt="Logo Image"
     />
   );
 }

@@ -8,9 +8,9 @@ function ProfileUserFriends() {
         Friends
       </p>
       <div className="rounded-sm flex justify-center flex-wrap max-h-96 overflow-y-hidden">
-        {posts.map((friend) => {
+        {posts.map((friend, i) => {
           return (
-            <div className="w-24 ml-3 mt-2">
+            <div className="w-24 ml-3 mt-2" key={i}>
               <div className="w-full relative h-24 rounded-md">
                 <Image
                   src={friend.profilePicture}

@@ -12,6 +12,7 @@ function HomeRightSlideTop() {
             layout="fill"
             className="rounded-lg"
             src="https://images.unsplash.com/photo-1520256788229-d4640c632e4b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFkdmVydGlzbWVudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt="advertise 1"
           />
         </div>
         <div className="ml-3">
@@ -25,6 +26,7 @@ function HomeRightSlideTop() {
             layout="fill"
             className="rounded-lg"
             src="https://images.unsplash.com/photo-1604727199378-bf5dd08726ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFkdmVydGlzbWVudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt="advertise 2"
           />
         </div>
         <div className="ml-3">

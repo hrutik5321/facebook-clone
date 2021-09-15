@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { signin, authenticate } from "../../Backend/authhelper";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -35,7 +34,7 @@ function LoginForm() {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <Link href="/">
+      <Link href="/" passHref>
         <button
           type="submit"
           onClick={onSubmitHandler}

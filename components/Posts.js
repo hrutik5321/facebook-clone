@@ -20,7 +20,7 @@ function Posts({ post }) {
       <div className="mt-3 rounded-lg bg-white w-full py-3 shadow-sm border border-gray-300">
         <div className="flex px-4">
           <div className="w-10 h-10 rounded-full relative cursor-pointer">
-            <Link href={`/profile/${post.name}`}>
+            <Link href={`/profile/${post.name}`} passHref>
               <Image
                 src={post.profilePicture}
                 alt="profile Photo"
@@ -30,7 +30,7 @@ function Posts({ post }) {
             </Link>
           </div>
           <div className="ml-2">
-            <Link href={`/profile/${post.name}`}>
+            <Link href={`/profile/${post.name}`} passHref>
               <p className="text-sm font-medium cursor-pointer">{post.name}</p>
             </Link>
             <p className="text-xs text-gray-500">6hr ago</p>

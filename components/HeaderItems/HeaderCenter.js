@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import {
   HomeIcon,
   VideoCameraIcon,
@@ -10,12 +9,9 @@ import Link from "next/link";
 
 function HeaderCenter() {
   const router = useRouter();
-  useEffect(() => {
-    console.log(router.pathname);
-  }, []);
   return (
     <div className="flex sm:hidden">
-      <Link href="/">
+      <Link href="/" passHref>
         <div
           className={
             router.pathname === "/"
@@ -33,7 +29,7 @@ function HeaderCenter() {
           />
         </div>
       </Link>
-      <Link href="/about">
+      <Link href="/about" passHref>
         <div
           className={
             router.pathname === "/about"

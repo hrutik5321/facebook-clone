@@ -6,7 +6,7 @@ import LoginForm from "../components/Login/LoginForm";
 function Login() {
   return (
     <div className="w-screen flex justify-center items-center h-screen">
-      <div className="w-3/4 flex  items-center justify-between sm:justify-center">
+      <div className="w-3/4 flex  items-center justify-between sm:justify-center sm:w-3/4">
         <LoginLogo />
         <LoginForm />
       </div>
