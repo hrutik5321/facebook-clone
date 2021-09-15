@@ -11,7 +11,7 @@ function ProfileImage({ userInfo }) {
           alt="user Image"
         />
       </div>
-      <div className="w-40 sm:w-full relative h-40 border-2 border-white rounded-full -mt-36">
+      <div className="w-40 relative h-40 border-2 border-white rounded-full -mt-36">
         <Image
           layout="fill"
           src={userInfo.profilePicture}
