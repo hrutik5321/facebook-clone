@@ -5,27 +5,22 @@ import { useRouter } from "next/router";
 
 function LoginForm() {
   const router = useRouter();
-  const [email, setEmail] = useState("hrutikdhumal@gmail.com");
-  const [password, setPassword] = useState("hrutik123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-
-    signin({ email, password }).then((data) => {
-      if (data.error) {
-        console.log("Error While Signin");
-        return "";
-      } else {
-        authenticate(data, () => {
-          const userId = data.user._id;
-          router.push(`/timeline/${userId}`);
-        });
-      }
-    });
+    if (!email.includes("@")) {
+      alert("Invalid Email");
+    } else if (!(password.length > 5)) {
+      alert("Password Should Atleast 5 character");
+    } else {
+      router.push(`/`);
+    }
   };
 
   return (
-    <form className="w-3/6 h-80 bg-white border border-gray-200 shadow-md rounded-lg p-4">
+    <form className="w-3/6 h-80 bg-white border border-gray-200 shadow-md rounded-lg p-4 sm:w-full">
       <input
         type="email"
         className="rounded-md w-full border border-gray-300 p-3 text-base outline-none  focus:border-blue-500"

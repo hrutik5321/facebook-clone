@@ -2,7 +2,7 @@ import { SearchIcon } from "@heroicons/react/outline";
 
 function HeaderSearchBox() {
   return (
-    <div className="rounded-full p-2 ml-1 flex bg-gray-200 items-center">
+    <div className="rounded-full p-2 ml-1 flex bg-gray-200 items-center sm:hidden">
       <SearchIcon height={19} className="text-gray-800" />
       <input
         type="text"

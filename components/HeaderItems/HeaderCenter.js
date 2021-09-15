@@ -14,7 +14,7 @@ function HeaderCenter() {
     console.log(router.pathname);
   }, []);
   return (
-    <div className="flex">
+    <div className="flex sm:hidden">
       <Link href="/">
         <div
           className={

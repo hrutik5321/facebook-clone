@@ -32,7 +32,22 @@
   .middle__container {
     margin-left: 0;
     padding: 0 1rem 0 2.5rem;
-    width: 60%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .left__container {
+    display: none;
+  }
+  .middle__container {
+    margin-left: 0;
+    padding: 0 0.5rem 0.5rem;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .middle__container {
+    width: 40%;
   }
 }
 

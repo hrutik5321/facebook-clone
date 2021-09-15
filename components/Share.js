@@ -27,16 +27,16 @@ function Share() {
           className="flex items-center py-1 px-3 hover:bg-gray-100 rounded-md cursor-pointer"
         >
           <PhotographIcon height={28} className="text-red-600" />
-          <p className="ml-2 text-sm font-medium">Photo/Video</p>
+          <p className="ml-2 text-sm font-medium sm:ml-0">Photo/Video</p>
         </label>
         <input style={{ display: "none" }} type="file" id="filePhoto" />
-        <div className="flex ml-1 items-center py-1 px-3 hover:bg-gray-100 rounded-md cursor-pointer">
+        <div className="flex ml-1 items-center py-1  px-3 sm:px-1 hover:bg-gray-100 rounded-md cursor-pointer">
           <VideoCameraIcon height={28} className="text-red-600" />
-          <p className="ml-2 text-sm font-medium">Live Video</p>
+          <p className="ml-2 text-sm sm:ml-0 font-medium">Live Video</p>
         </div>
         <button
           type="submit"
-          className="justify-self-end  px-3 bg-green-600 text-white rounded-md text-sm font-medium"
+          className="justify-self-end sm:py-1 px-3 sm:px-1.5 bg-green-600 text-white rounded-md text-sm font-medium"
         >
           Share
         </button>

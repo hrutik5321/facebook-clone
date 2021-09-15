@@ -11,7 +11,7 @@ import ProfileUserFriends from "./ProfileUserFriends";
 function PofileInfo({ children }) {
   return (
     <div className="w-full flex mt-3">
-      <div className="w-2/5  ">
+      <div className="w-2/5 sm:hidden ">
         <div className="p-2 shadow-sm border border-gray-300 w-full bg-white rounded-md">
           <p className="font-bold text-xl text-gray-900 mb-2">Intro</p>
           <p className="text-base text-gray-900 flex items-center">
